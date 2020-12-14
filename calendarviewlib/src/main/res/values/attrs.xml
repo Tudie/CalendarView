@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CalendarView">
+
+        <attr name="sureColor" format="color"></attr>
+        <attr name="suretext" format="string"></attr>
+        <attr name="cancelColor" format="color"></attr>
+        <attr name="canceltext" format="string"></attr>
+        <attr name="todayColor" format="color"></attr>
+        <attr name="titleColor" format="color"></attr>
+        <attr name="titleSize" format="dimension"></attr>
+        <attr name="textColor" format="color"></attr>
+        <attr name="textedColor" format="color"></attr>
+        <attr name="textgColor" format="color"></attr>
+        <attr name="showstarttime" format="boolean"></attr>
+        <attr name="pasttime" format="boolean"></attr>
+        <attr name="mul" format="boolean"></attr>
+        <attr name="year" format="integer"></attr>
+
+    </declare-styleable>
+
+</resources>

@@ -13,7 +13,7 @@ mul 是否多选 showstarttime展示从开始位置展示 否则从当前时间�
  1、 CalendarViewHorDialog calendarViewDialog=new CalendarViewHorDialog(MainActivity.this);
      calendarViewDialog.show();\n
  2、 CalendarViewVerDialog calendarViewVerDialog = new CalendarViewVerDialog(MainActivity.this);
-     calendarViewVerDialog.show();  
+     calendarViewVerDialog.show();  <br />
 	 
 	 3、
 	   <com.app.calendarview.CalendarVerView

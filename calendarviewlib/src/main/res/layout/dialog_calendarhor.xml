@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        app:mul="false"
+        app:mul="true"
         app:showstarttime="true"
         app:year="30"
         android:paddingBottom="10dp"

@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.show).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CalendarViewHorDialog calendarViewDialog = new CalendarViewHorDialog(MainActivity.this);
+                calendarViewDialog = new CalendarViewHorDialog(MainActivity.this);
                 calendarViewDialog.show();
 
             }
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.showver).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CalendarViewVerDialog calendarViewVerDialog = new CalendarViewVerDialog(MainActivity.this);
+                calendarViewVerDialog = new CalendarViewVerDialog(MainActivity.this);
                 calendarViewVerDialog.show();
 
             }

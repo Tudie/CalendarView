@@ -30,16 +30,6 @@ public class CalendarVerView extends LinearLayout {
 
     private Context context;
 
-    public static String START_TIME_KEY = "startTime";
-    public static String END_TIME_KEY = "endTime";
-    public static final int SINGLE = 1;
-    public static final int MULT = 2;
-
-    private final int START = 0;
-    private final int TODAY = 1;
-    private final int END = 2;
-
-
     private RecyclerView recyclerView;
     private OuterRecycleAdapter outAdapter;
 
@@ -55,7 +45,6 @@ public class CalendarVerView extends LinearLayout {
     DayTimeEntity startDayTime;
     DayTimeEntity endDayTime;
     GridLayoutManager layoutManager;
-    private boolean isTitleTimeShow = true;
     private CalendarCallback calendarCallback;
     private CalendarSelectUpdateCallback multCallback = new CalendarSelectUpdateCallback() {
         @Override
@@ -85,6 +74,7 @@ public class CalendarVerView extends LinearLayout {
 
     public CalendarVerView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        this.context=context;
         initCalendar();
         initAttrs(attrs);
         initView(context);
@@ -233,12 +223,6 @@ public class CalendarVerView extends LinearLayout {
 
     private void updateMultView() {
         if (mul) {
-            if (startDayTime.day != 0) {
-//                leftTime.setText(startDayTime.year + "-" + Util.fillZero(startDayTime.month + 1) + "-" + Util.fillZero(startDayTime.day));
-            } else {
-//                leftTime.setText("开始时间");
-
-            }
             if (endDayTime.day != 0) {
                 Calendar calendar = Calendar.getInstance();
                 int year = calendar.get(Calendar.YEAR);
@@ -257,7 +241,6 @@ public class CalendarVerView extends LinearLayout {
     }
 
     public void setistitleTimeShow(boolean type) {
-        this.isTitleTimeShow = type;
         updateViewVisibility();
     }
 
@@ -308,19 +291,6 @@ public class CalendarVerView extends LinearLayout {
     }
 
     private void addListener() {
-//        clear.setOnClickListener(new OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startDayTime.day = 0;
-//                endDayTime.day = 0;
-//                startDayTime.listPosition = -1;
-//                startDayTime.monthPosition = -1;
-//                endDayTime.listPosition = -1;
-//                endDayTime.monthPosition = -1;
-//                if (outAdapter != null)
-//                    outAdapter.notifyDataSetChanged();
-//            }
-//        });
 
         findViewById(R.id.calendar_cancel).setOnClickListener(new OnClickListener() {
             @Override

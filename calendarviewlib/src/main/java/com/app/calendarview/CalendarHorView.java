@@ -356,6 +356,8 @@ public class CalendarHorView extends LinearLayout {
             if (date.getTime() > sDateTime.getTime()) {
                 eDateTime = date;
                 isSelectingSTime = true;
+            }else {
+                selectSDate(date);
             }
         }
 

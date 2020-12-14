@@ -1,13 +1,13 @@
 # CalendarView
 
 
-1、CalendarViewHorDialog 横向单个或者两个时间选择DIALOG
-2、CalendarViewVerDialog 纵向单个或者两个时间选择DIALOG
+1、CalendarViewHorDialog 横向单个或者两个时间选择DIALOG<br />
+2、CalendarViewVerDialog 纵向单个或者两个时间选择DIALOG<br />
 
-3、CalendarHorView 横向单个或者两个时间选择自定义View
-4、CalendarVerView 纵向单个或者两个时间选择自定义View
+3、CalendarHorView 横向单个或者两个时间选择自定义View<br />
+4、CalendarVerView 纵向单个或者两个时间选择自定义View<br />
 
-mul 是否多选 showstarttime展示从开始位置展示 否则从当前时间展示 pasttime 当前时间之前是否可选
+mul 是否多选 showstarttime展示从开始位置展示 否则从当前时间展示 pasttime 当前时间之前是否可选<br />
 
 例如：
  1、 CalendarViewHorDialog calendarViewDialog=new CalendarViewHorDialog(MainActivity.this);
